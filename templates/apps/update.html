@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UPDATE</title>
+    </head>
+    <center>
+        <body>
+            <h2>UPDATE STUDENT INFORMATION</h2>
+            <form method="POST">
+                {% csrf_token %}
+                STUDENT Rollno:<input type="text" name="Rollno" value="{{s.Rollno}}"><br>
+                STUDENT Name:<input type="text" name="Name" value="{{s.Name}}"><br>
+                STUDENT Class:<input type="text" name="Class" value="{{s.Class}}"><br>
+                STUDENT Gender:<input type="text" name="Gender" value="{{s.Gender}}"><br>
+                STUDENT Age:<input type="text" name="Age" value="{{s.Age}}"><br>
+                STUDENT Group:<input type="text" name="Group" value="{{s.Group}}"><br>
+                STUDENT Address:<input type="text" name="Address" value="{{s.Address}}"><br>
+
+                <input type="Submit" value="UPDATE RECORD">
+            </form>
+        </body>
+    </center>
+</html>

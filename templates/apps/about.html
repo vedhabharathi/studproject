@@ -1,0 +1,38 @@
+{% extends 'apps/index.html' %}
+ {% block body_block %}
+ {% load static %}
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static '/css/abot.css' %}">
+</head>
+<body>
+    </br>
+    </br>
+    <section class="atc" style="background-image: url('{% static 'images/about.png' %}');">
+    </section>
+    <section class="last">
+        <h4>About Us</h4>
+          <p>Our Schools organized spaces purposed for teaching and learning. The classrooms where teachers teach and students learn are of central importance.</br>Classrooms may be specialized for certain subjects, 
+            such as laboratory classrooms for science education and workshops for industrial arts education.</p>
+      </section>
+    <section class="footer">
+        <div class="abut">
+            <div class="abut-col">
+              <h3>Fostering Academic Excellence</h3>
+              <p>By supporting skilled and dedicated teachers who maintain high academic standards, motivate our students and collaborate with our families</p>
+            </div>
+        </br>
+            <div class="abut-col">
+              <h3>Developing Critical Thinkers</h3>
+              <p>These include art, music, additional languages, specialized sciences, or technology-related courses.</p>
+            </div>
+        </br>
+            <div class="abut-col">
+              <h3>Ensuring a Safe Environment</h3>
+              <p>By promoting mutual respect in our diverse community of students, teachers and families</p>
+            </div>
+          </div>
+      </section>
+
+</body>
+{% endblock %}

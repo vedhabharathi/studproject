@@ -1,0 +1,51 @@
+{% extends 'apps/index.html' %}
+ {% block body_block %}
+ {% load static %}
+ <head>
+    <link rel="stylesheet" type="text/css" href="{% static '/css/hom.css' %}">
+ </head>
+<section class="course">
+    <h1>Courses We Offer</h1>
+    <div class="row">
+      <div class="course-col">
+        <h3>Core</h3>
+        <p>Fundamental subjects in our curriculum, such as mathematics, science, language arts, and social studies.</p>
+      </div>
+      <div class="course-col">
+        <h3>Electives</h3>
+        <p>These include art, music, additional languages, specialized sciences, or technology-related courses.</p>
+      </div>
+      <div class="course-col">
+        <h3>Career-Specific Courses</h3>
+        <p>These courses focus on preparing students for specific careers, such as culinary arts, automotive technology, or healthcare.</p>
+      </div>
+    </div>
+</section>
+<section class="campus">
+    <h1>Our Campus</h1>
+    <div class="row">
+        <div class="campus-col">
+            <img src="{% static 'images/ca.jpg' %}">
+            <div class="layer">
+                <h3>Library</h3>
+            </div>
+        </div>
+            <div class="campus-col">
+              <img src="{% static 'images/campu.jpg' %}">
+              <div class="layer">
+                  <h3>Study Place</h3>
+              </div>
+            </div>
+              <div class="campus-col">
+                <img src="{% static 'images/campus.jpg' %}">
+                <div class="layer">
+                    <h3>Park</h3>
+                </div>
+              </div>
+        </div>
+    </div>
+</section>
+<section class="cta" style="background-image: url('{% static 'images/reg.jpeg' %}');">
+  <a href="/insert" class="hero-btn">Enroll Now</a>
+</section>
+{% endblock %}

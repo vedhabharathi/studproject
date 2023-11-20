@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% extends 'apps/index.html' %}
+{% block body_block %}
+<html>
+    <head>
+        <title>Record</title>
+    </head>
+    <center>
+        <body>
+            <h2>Student Information</h2>
+            <table border="2">
+                <thead>
+                    <th>Rollno</th>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th>Gender</th>
+                    <th>Age</th>
+                    <th>Group</th>
+                    <th>Address</th>
+                </thead>
+                {% for i in s %}
+                <tr>
+                    <td>{{i.Rollno}}</td>
+                    <td>{{i.Name}}</td>
+                    <td>{{i.Class}}</td>
+                    <td>{{i.Gender}}</td>
+                    <td>{{i.Age}}</td>
+                    <td>{{i.Group}}</td>
+                    <td>{{i.Address}}</td>
+                    <td><a href='/update/{{i.id}}'>Update</a>|<a href='/delete/{{i.id}}'>Delete</a></td>
+                </tr>
+                {% endfor %}
+            </table>
+        </body>
+    </center>
+    {% endblock %}
+</html>

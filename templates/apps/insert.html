@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% extends 'apps/index.html' %}
+{% block body_block %}
+<html>
+    <head>
+        <title>INSERT</title>
+    </head>
+    <center>
+        <body>
+            <h2>Fill Details</h2>
+                {{form.as_p}}
+                {% csrf_token %}
+                <input type="Submit" value="INSERT RECORD">
+            </form>
+        </body>
+    </center>
+    {% endblock %}
+</html>
