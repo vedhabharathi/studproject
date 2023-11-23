@@ -16,6 +16,7 @@ def read(request):
 
 def insert(request):
     form=StudentForm()
+    form_class=StudentForm
     if request.method=="POST":
         form=StudentForm(request.POST)
         if form.is_valid():

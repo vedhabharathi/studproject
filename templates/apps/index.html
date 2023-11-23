@@ -18,7 +18,6 @@
            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <li class="nav-item">
               <a class="nav-link" type="button" href="/home">Home</a>
@@ -30,8 +29,12 @@
               <a class="nav-link" type="button" href="/insert">Enroll</a>
               </li>
               {% if user.is_authenticated %}
-              <li class="nav-item">
-              <a class="nav-link" href="/logout">Logout</a>
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Info</a>
+              <ul class="dropdown-menu">
+              <li><a class="dropdown-item" type="button" href="/read">View</a></li>
+              <li><a class="dropdown-item" href="/logout">Logout</a></li>
+              </ul>
               </li>
               {% else %}
               <li class="nav-item">

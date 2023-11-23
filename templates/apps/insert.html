@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 {% extends 'apps/index.html' %}
 {% block body_block %}
-<html>
-    <head>
-        <title>INSERT</title>
-    </head>
-    <center>
-        <body>
-            <h2>Fill Details</h2>
-                {{form.as_p}}
-                {% csrf_token %}
-                <input type="Submit" value="INSERT RECORD">
-            </form>
-        </body>
-    </center>
+<html>              
+        <h2 style="text-align: center;font-family: 'Times New Roman', Times, serif;">User Register</h2></br>
+        <div class="container">
+            <div class="row justify-content-center align-items-center">          
+                <form method="POST">
+                    {{form.as_p}}
+                    {% csrf_token %}
+                    <button type="submit" name="register" class="btn btn-primary"><span class="glyphicon glyphicon-log-in"></span> Register</button></br></br></br></br></br></br></br></br></br>
+                </form>
+            </div>  
+        </div>
     {% endblock %}
 </html>
